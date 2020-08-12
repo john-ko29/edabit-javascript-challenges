@@ -7,7 +7,6 @@ function numberOfDays(coordinate) {
         days = 0;
         continue;
       }
-
       days++
     }
   }
