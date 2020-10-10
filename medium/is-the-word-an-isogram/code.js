@@ -1,5 +1,5 @@
 function isIsogram(str) {
-  // Your code here.
+  const obj = {}
 }
 
 module.exports = isIsogram;
