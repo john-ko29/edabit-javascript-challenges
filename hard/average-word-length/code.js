@@ -1,5 +1,5 @@
 function averageWordLength(str) {
-  // Your code here.
+  let total = 0;
 }
 
 module.exports = averageWordLength;
