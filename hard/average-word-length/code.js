@@ -1,8 +1,8 @@
 function averageWordLength(str) {
   let total = 0;
   const words = str.split(" ");
-  for (let i = 0; i < str.length; i++) {
-
+  for (let i = 0; i < words.length; i++) {
+    total = words[i].length;
   }
 }
 
