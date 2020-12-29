@@ -5,6 +5,7 @@ function averageWordLength(str) {
   for (let i = 0; i < words.length; i++) {
     total = words[i].length;
   }
+  const average = total/numOfWords;
 }
 
 module.exports = averageWordLength;
