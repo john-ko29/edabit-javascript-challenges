@@ -7,6 +7,8 @@ function averageWordLength(str) {
   }
   const average = total/numOfWords;
   const averageRounded = average.toFixed(2);
+
+  return parseFloat(averageRounded);
 }
 
 module.exports = averageWordLength;
