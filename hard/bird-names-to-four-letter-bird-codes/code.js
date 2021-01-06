@@ -1,5 +1,5 @@
 function birdCode(arr) {
-  // Your code here.
+  let name = "";
 }
 
 module.exports = birdCode;
