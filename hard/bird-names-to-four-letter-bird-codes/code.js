@@ -1,5 +1,7 @@
 function birdCode(arr) {
-  // Your code here.
+  let name = "";
+  const words = arr.split(" ");
+  const nameLength = words.length;
 }
 
 module.exports = birdCode;
