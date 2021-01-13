@@ -8,6 +8,8 @@ function birdCode(arr) {
   } else if (words.length === 2) {
     name += words[0].substr(0, 2);
     name +=  words[1].substr(0, 2);
+  } else if (words.length === 3) {
+
   }
 }
 
