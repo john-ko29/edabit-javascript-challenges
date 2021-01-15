@@ -10,6 +10,7 @@ function birdCode(arr) {
     name +=  words[1].substr(0, 2);
   } else if (words.length === 3) {
     name += words[0].substr(0, 2);
+    name += words[1].substr(0, 1);
   }
 }
 
