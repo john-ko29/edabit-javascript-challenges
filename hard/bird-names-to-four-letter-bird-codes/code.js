@@ -1,7 +1,6 @@
 function birdCode(arr) {
   let name = "";
   const words = arr.split(" ");
-  const nameLength = words.length;
 
   if (words.length === 1) {
     name += words[0].substr(0, 4);
@@ -18,6 +17,8 @@ function birdCode(arr) {
     name += words[2].substr(0, 1);
     name += words[3].substr(0, 1);
   }
+
+  return name;
 }
 
 module.exports = birdCode;
