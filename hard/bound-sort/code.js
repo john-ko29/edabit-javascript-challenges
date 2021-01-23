@@ -1,5 +1,5 @@
 function boundSort(arr, bounds) {
-  // Your code here.
+  const tempArr = arr.slice(bounds)
 }
 
 module.exports = boundSort;
