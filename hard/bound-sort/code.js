@@ -1,5 +1,15 @@
 function boundSort(arr, bounds) {
-  // Your code here.
+  const tempArr = arr.slice(bounds[0], bounds[1] + 1);
+  console.log(tempArr)
+  tempArr.sort(function(a,b) {return a-b})
+
+  for (let i = tempArr.length; i < arr.length; i++) {
+    tempArr.push(arr[i])
+  }
+
+  console.log(tempArr)
+
+  return tempArr;
 }
 
 module.exports = boundSort;
