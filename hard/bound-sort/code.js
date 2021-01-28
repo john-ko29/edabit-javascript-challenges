@@ -3,11 +3,13 @@ function boundSort(arr, bounds) {
   console.log(tempArr)
   tempArr.sort(function(a,b) {return a-b})
 
+  const sortedArr = arr.sort(function (a, b) { return a - b })
+
   for (let i = tempArr.length; i < arr.length; i++) {
     tempArr.push(arr[i])
   }
 
-  console.log(tempArr)
+  console.log(tempArr, arr)
 
   return tempArr;
 }
