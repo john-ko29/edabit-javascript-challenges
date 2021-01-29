@@ -9,6 +9,10 @@ function boundSort(arr, bounds) {
     tempArr.push(arr[i])
   }
 
+  for (let i = 0; i < sortedArr.length; i++) {
+
+  }
+
   console.log(tempArr, arr)
 
   return tempArr;
