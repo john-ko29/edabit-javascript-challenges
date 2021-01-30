@@ -1,6 +1,5 @@
 function boundSort(arr, bounds) {
   const tempArr = arr.slice(bounds[0], bounds[1] + 1);
-  console.log(tempArr)
   tempArr.sort(function(a,b) {return a-b})
 
   const sortedArr = arr.sort(function (a, b) { return a - b })
@@ -14,8 +13,6 @@ function boundSort(arr, bounds) {
       return false;
     }
   }
-
-  console.log(tempArr, arr)
 
   return true;
 }
