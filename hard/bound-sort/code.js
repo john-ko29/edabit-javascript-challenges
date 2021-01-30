@@ -10,12 +10,14 @@ function boundSort(arr, bounds) {
   }
 
   for (let i = 0; i < sortedArr.length; i++) {
-
+    if (tempArr[i] !== sortedArr[i]) {
+      return false;
+    }
   }
 
   console.log(tempArr, arr)
 
-  return tempArr;
+  return true;
 }
 
 module.exports = boundSort;
