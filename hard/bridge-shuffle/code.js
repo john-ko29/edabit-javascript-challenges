@@ -6,6 +6,16 @@ function bridgeShuffle(arr1, arr2) {
   } else {
     arrLength = arr2.length;
   }
+  for (let i = 0; i < arrLength; i++) {
+    if (arr1.length) {
+      shuffled.push(arr1.shift());
+    }
+    if (arr2.length) {
+      shuffled.push(arr2.shift());
+    }
+  }
+
+  return shuffled;
 }
 
 module.exports = bridgeShuffle;
