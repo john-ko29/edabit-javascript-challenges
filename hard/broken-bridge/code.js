@@ -18,6 +18,7 @@ function canPatch(bridge, planks) {
       }
     }
   }
+  return true;
 }
 
 module.exports = canPatch;
