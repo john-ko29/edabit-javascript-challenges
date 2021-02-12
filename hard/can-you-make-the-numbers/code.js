@@ -15,7 +15,19 @@ function canBuild(digits, arr) {
       numReq.push(parseInt(sNumber[k]))
     }
   }
+
   console.log(numDigits, numReq)
+
+  for (let i = 0; i < numReq.length; i++) {
+    if (!numDigits.includes(numReq[i])) {
+      return false;
+    } else  {
+      const removeIndex = numDigits.findIndex(numReq[i])
+      numDigits.splice(removeIndex, 1)
+    }
+  }
+
+  return true;
 }
 
 module.exports = canBuild;
