@@ -16,13 +16,12 @@ function canBuild(digits, arr) {
     }
   }
 
-  console.log(numDigits, numReq)
-
   for (let i = 0; i < numReq.length; i++) {
     if (!numDigits.includes(numReq[i])) {
       return false;
     } else  {
-      const removeIndex = numDigits.findIndex(numReq[i])
+      const isReq = (element) => element === numReq[i]
+      const removeIndex = numDigits.findIndex(isReq)
       numDigits.splice(removeIndex, 1)
     }
   }
