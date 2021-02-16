@@ -5,7 +5,8 @@ function isCheckerboard(arr) {
       if (i === 0 && k === 0) {
         continue;
       }
-      if (arr.length === 2 && arr[0][1] === arr[1][0] && arr[0][0] === arr[1][1] && i === 1)  {
+      if (arr.length === 2 && arr[0][1] === arr[1][0] &&
+        arr[0][0] === arr[1][1] && i === 1)  {
         continue;
       }
       if (previous === arr[i][k]) {
