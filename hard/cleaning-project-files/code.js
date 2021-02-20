@@ -2,7 +2,12 @@ function cleanUp(files, sort) {
   const sortedFiles = [];
   for (let i = 0; i < files.length; i++) {
     let dotLocation = files[i].indexOf(".");
-    const fileName = files[i].substring(0, dotLocation);
+    let fileName = null;
+    if (sort === "prefix")  {
+      fileName = files[i].substring(0, dotLocation);
+    } else {
+      fileName = files[i].substring(dotLocation, files.length - 1);
+    }
     console.log(dotLocation, fileName);
     if (i === 0) {
       const firstFile = [files[0]]
@@ -12,7 +17,13 @@ function cleanUp(files, sort) {
 
     let moveOn = false;
     for (let k = 0; k < sortedFiles.length; k++) {
-      if (sortedFiles[k][0].substring(0, dotLocation) === fileName) {
+      let currentFile = null;
+      if (sort === "prefix") {
+        currentFile = sortedFiles[k][0].substring(0, dotLocation);
+      } else {
+        currentFile = sortedFiles[k][0].substring(dotLocation, files.length - 1);
+      }
+      if (currentFile === fileName) {
         sortedFiles[k].push(files[i]);
         moveOn = true;
       }
