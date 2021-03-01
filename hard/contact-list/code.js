@@ -9,10 +9,7 @@ function sortContacts(names, sort) {
     initials.push(tempFullName[1]);
   }
   initials.sort();
-  for (let i = 0; i < initials.length; i++) {
-    order.push()
-  }
-  const contactIndex = names.indexOf(initials[0])
+
   console.log(initials);
 }
 
