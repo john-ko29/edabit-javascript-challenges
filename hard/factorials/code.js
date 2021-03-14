@@ -4,7 +4,7 @@ function filterFactorials(numbers) {
     let isFactorial = false;
     let check = 1;
     let counter = 1;
-    while (check < numbers[i]) {
+    while (check <= numbers[i]) {
       check *= counter;
       if (numbers[i] === check)  {
         isFactorial = true;
@@ -12,7 +12,7 @@ function filterFactorials(numbers) {
       }
       counter++;
     }
-    console.log(check);
+    console.log(check,counter);
     if  (isFactorial)  factorial.push(numbers[i])
   }
   return factorial;
