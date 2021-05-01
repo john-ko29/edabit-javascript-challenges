@@ -8,13 +8,17 @@ function longestRun(arr) {
     if (currentValue === arr[i]) {
       currentRun++;
     } else {
-      if (longestRun < currentRun) longestRun = currentRun;
+      if (longestRun < currentRun) {
+        longestRun = currentRun;
+      }
       currentRun = 1;
       currentValue = arr[i];
     }
   }
 
-  if (longestRun < currentRun) longestRun = currentRun;
+  if (longestRun < currentRun) {
+    longestRun = currentRun;
+  }
 
   return currentRun;
 }
