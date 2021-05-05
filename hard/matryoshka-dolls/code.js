@@ -1,6 +1,7 @@
 function matryoshka(arr) {
-  const minMax = [];
+  const allMinMax =  [];
   for (let i = 0; i < arr.length; i++) {
+    const minMax =[];
     let min = arr[i][0];
     let max = arr[i][0]
     for (let k = 1; k < arr[i].length; k++) {
@@ -13,8 +14,9 @@ function matryoshka(arr) {
     }
     minMax.push(min);
     minMax.push(max);
+    allMinMax.push(minMax)
   }
-  console.log(minMax)
+  console.log(allMinMax)
 }
 
 module.exports = matryoshka;
