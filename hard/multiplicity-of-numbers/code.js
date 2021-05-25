@@ -10,6 +10,13 @@ function multiplicity(arr) {
     }
   }
 
+  for (const property in obj) {
+    const tempArr = [];
+    tempArr.push(property);
+    tempArr.push(obj[property]);
+    newArr.push(tempArr);
+  }
+
   return newArr;
 }
 
